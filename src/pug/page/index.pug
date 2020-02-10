@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    title 
+    meta(charset = 'utf-8')
+    meta(name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover")
+    meta(name="description" content="Одностраничный сайт-визитка")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    link(href="css/main.css" rel="stylesheet")
+    script(src="script/show_password.js")
+  body
+    include ../components/order
+    main(role="main").main
+      article.article
+        include ../components/header
+        .container
+          h1 Test
+          include ../components/stepper
+          include ../components/price
+          include ../components/registration
+          include ../components/log-in
+        include ../components/footer

@@ -1,0 +1,54 @@
+.registration {
+  max-width: 1530px;
+  margin-top: 40px; }
+  .registration-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 460px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5; }
+  .registration__title {
+    font-size: 28px;
+    font-weight: 300; }
+  .registration__subtitle {
+    margin-top: 30px;
+    font-size: 15px; }
+  .registration__links {
+    margin-top: 45px;
+    display: flex; }
+  .registration__img-container {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .registration__link {
+    padding: 10px 10px 10px 28px;
+    border-radius: 9999px;
+    min-width: 180px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s; }
+    .registration__link:hover {
+      opacity: 0.9; }
+    .registration__link-container {
+      padding-right: 20px; }
+    .registration__link--facebook {
+      background-color: #3c5a99;
+      color: #ffffff; }
+    .registration__link--google {
+      background-color: #eeeeee; }
+
+@media (max-width: 635px) {
+  .registration__links {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  .registration__link-container {
+    padding: 0 10px 10px 10px; } }
+
+/*# sourceMappingURL=registration.css.map */

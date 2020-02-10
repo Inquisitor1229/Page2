@@ -1,0 +1,24 @@
+script(src="script/form_post.js")
+section.log-in
+  .log-in-container
+    h2.log-in__header log-in
+    form(onsubmit="return false;" name="login_form")#login_form
+      .log-in__email
+        span.log-in__email-title Email
+        input(type="text" placeholder="Email").log-in__email-text#email
+      .log-in__password
+        span.log-in__password-title Password
+        .log-in__password-block
+          input(type="password" placeholder="Password").log-in__password-text#password
+          button(type="button" onclick="if (password.type == 'text') password.type = 'password'; else password.type = 'text';").log-in__password-show Show
+      p.log-in__price Price: $ 0.99
+      .log-in__btn-container
+        input(type="submit" value="CONTINUE" onclick="user_post()").log-in__continue-btn
+  #modal1.modal
+    .modal__content
+      p Форма успешно отправлена!
+      span.modal__close x
+  #modal2.modal
+    .modal__content
+      p Должны быть заполнены все поля!
+      span.modal__close x

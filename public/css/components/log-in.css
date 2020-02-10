@@ -1,0 +1,92 @@
+.log-in {
+  max-width: 1530px;
+  margin-top: 65px; }
+  .log-in-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 460px; }
+  .log-in__header {
+    display: none; }
+  .log-in__password {
+    margin-top: 29px; }
+  .log-in__email, .log-in__password {
+    display: flex;
+    flex-direction: column; }
+  .log-in__email-title, .log-in__password-title {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.8); }
+  .log-in__email-text, .log-in__password-text {
+    color: #000000;
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid #000000; }
+  .log-in__email-text:focus, .log-in__password-text:focus {
+    outline: none; }
+  .log-in__password-block {
+    position: relative; }
+  .log-in__password-show {
+    border: none;
+    background-color: #ffffff;
+    color: #2b87dc;
+    position: absolute;
+    right: 0;
+    padding: 7px 0;
+    cursor: pointer;
+    transition: 0.5s; }
+    .log-in__password-show:hover {
+      opacity: 0.2; }
+    .log-in__password-show:focus {
+      outline: none; }
+  .log-in__price {
+    margin-top: 26px;
+    font-size: 18px;
+    font-weight: 600; }
+  .log-in__btn-container {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center; }
+  .log-in__continue-btn {
+    border: none;
+    background-color: #2b87dc;
+    border-radius: 9999px;
+    color: #ffffff;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: 0.5s; }
+    .log-in__continue-btn:hover {
+      opacity: 0.9; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000; }
+  .modal__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefefe;
+    margin: 20% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    z-index: 99999; }
+    .modal__content p {
+      font-size: 20px; }
+  .modal__close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer; }
+
+/*# sourceMappingURL=log-in.css.map */

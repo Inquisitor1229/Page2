@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Одностраничный сайт-визитка">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="script/show_password.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" hidden id="order-toggle">
+    <section class="order">
+      <label class="order__toggle" for="order-toggle" onclick><img src="img/basket.svg" alt="basket"></label>
+      <h2 class="order__header">Your order</h2>
+      <h3 class="order__name">Digital Access</h3>
+      <p class="order__description">Unlimited access to website, and the smartphone and tablet apps.</p>
+      <p class="order__price">$0.99</p>
+      <p class="order__info">Sales tax may apply.</p>
+      <p class="order__total">Total: $0.99</p>
+    </section>
+    <main class="main" role="main">
+      <article class="article">
+        <header class="header">
+          <div class="header-container"><img class="header__logo" src="img/logo.png" alt="logo"></div>
+        </header>
+        <div class="container">
+          <h1>Test</h1>
+          <section class="stepper">
+            <h2 class="stepper__header">steps</h2>
+            <div class="stepper-container"><img class="stepper__step-marker stepper__step-marker--active" src="img/marker.svg" alt="marker">
+              <div class="stepper__steps">
+                <div class="stepper__step stepper__step--active"> 
+                  <div class="stepper__step-line stepper__step-line--active"></div>
+                  <p>Create an account</p>
+                </div>
+                <div class="stepper__step stepper__step--next"> 
+                  <div class="stepper__step-line"></div>
+                  <p>Billing address</p>
+                </div>
+                <div class="stepper__step">
+                  <div class="stepper__step-line"></div>
+                  <p>Payment</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="price">
+            <div class="price-container">
+              <h2 class="price__header">price</h2>
+              <h3 class="price__title">Digital</h3>
+              <p class="price__subject">99¢ 4 weeks only then $1.99 / week</p>
+            </div>
+          </section>
+          <section class="registration">
+            <div class="registration-container">
+              <h2 class="registration__title">Create an account</h2>
+              <p class="registration__subtitle">Already have an account? <b>LOG IN</b></p>
+              <div class="registration__links">
+                <div class="registration__link-container"><a class="registration__link registration__link--facebook" href="#"><span>FACEBOOK</span>
+                    <div class="registration__img-container"><img src="img/facebook.svg" alt="facebook"></div></a></div>
+                <div class="registration__link-container"><a class="registration__link registration__link--google" href="#"><span>GOOGLE</span>
+                    <div class="registration__img-container"><img src="img/google.svg" alt="google"></div></a></div>
+              </div>
+            </div>
+          </section>
+          <script src="script/form_post.js"></script>
+          <section class="log-in">
+            <div class="log-in-container">
+              <h2 class="log-in__header">log-in</h2>
+              <form onsubmit="return false;" name="login_form" id="login_form">
+                <div class="log-in__email"><span class="log-in__email-title">Email</span>
+                  <input class="log-in__email-text" type="text" placeholder="Email" id="email">
+                </div>
+                <div class="log-in__password"><span class="log-in__password-title">Password</span>
+                  <div class="log-in__password-block">
+                    <input class="log-in__password-text" type="password" placeholder="Password" id="password">
+                    <button class="log-in__password-show" type="button" onclick="if (password.type == 'text') password.type = 'password'; else password.type = 'text';">Show</button>
+                  </div>
+                </div>
+                <p class="log-in__price">Price: $ 0.99</p>
+                <div class="log-in__btn-container">
+                  <input class="log-in__continue-btn" type="submit" value="CONTINUE" onclick="user_post()">
+                </div>
+              </form>
+            </div>
+            <div class="modal" id="modal1">
+              <div class="modal__content">
+                <p>Форма успешно отправлена!</p><span class="modal__close">x</span>
+              </div>
+            </div>
+            <div class="modal" id="modal2">
+              <div class="modal__content">
+                <p>Должны быть заполнены все поля!</p><span class="modal__close">x</span>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="footer">
+          <div class="footer-container">
+            <nav class="footer__menu">
+              <ul class="footer__menu-items">
+                <li class="footer__menu-item"><a href="#"><span>Home</span></a></li>
+                <li class="footer__menu-item"><a href="#"><span>FAQ</span></a></li>
+                <li class="footer__menu-item"><a href="#"><span>Contact Us</span></a></li>
+                <li class="footer__menu-item"><a href="#"><span>Terms of Service</span></a></li>
+                <li class="footer__menu-item"><a href="#"><span>Privacy Policy</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
